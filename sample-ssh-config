@@ -1,0 +1,7 @@
+#example login: ssh fusion-dl -X
+
+Host <hostname>
+  User <username>
+  Hostname 0.0.0.0
+  IdentityFile ~/.ssh/<filename>
+  RemoteForward 19988 localhost:19988
