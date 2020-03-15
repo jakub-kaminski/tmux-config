@@ -41,8 +41,8 @@ tmux set-environment -g TMUX_PLUGIN_MANAGER_PATH "~/.tmux/plugins"
 tmux kill-session -t __noop >/dev/null 2>&1 || true
 
 
-sudo cp "$(REPODIR)/socketfiles/xclip.socket" "/etc/systemd/system/xclip.socket"
-sudo cp "$(REPODIR)/socketfiles/xclip@.service" "/etc/systemd/system/xclip@.service"
+sudo cp "${REPODIR}/socketfiles/xclip.socket" "/etc/systemd/system/xclip.socket"
+sudo cp "${REPODIR}/socketfiles/xclip@.service" "/etc/systemd/system/xclip@.service"
 sudo systemctl enable xclip.socket
 
 printf "OK: Completed\n"
